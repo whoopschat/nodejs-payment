@@ -1,12 +1,12 @@
 # nodejs-payment
 > payment nodejs library
 
-#### Install
+## Install
 ```
 > npm install nodejs-payment --save-dev
 ```
 
-#### Usage
+## Usage
 require
 ```js
 // app.js
