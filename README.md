@@ -8,6 +8,7 @@
 
 ## Usage
 
+### app.js
 ```js
 // app.js
 const config = require('./config.js');
@@ -25,6 +26,7 @@ new Payment(config).webPay(type, client_ip, order_id, title, amount).then(url =>
 
 ### config.js
 ```js
+// config.js
 'use strict';
 
 module.exports = {
