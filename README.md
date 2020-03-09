@@ -12,18 +12,14 @@ require
 // app.js
 const config = require('./config.js');
 const Payment = require('nodejs-payment');
+let type = "wepay"; // or "alipay"
 let client_ip = "127.0.0.1";
 let order_id = Date.now();
 let title = "payment test";
 let amount = 1;
-// wepay
-new Payment(config).webPay("wepay", client_ip, order_id, title, amount).then(url => {
-    // payment url
-});
-
-// alipay
-new Payment(config).webPay("alipay", client_ip, order_id, title, amount).then(url => {
-    // payment url
+// create payment url 
+new Payment(config).webPay(type, client_ip, order_id, title, amount).then(url => {
+    // open this url go pay
 });
 ```
 
