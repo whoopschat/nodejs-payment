@@ -7,7 +7,7 @@
 ```
 
 ## Usage
-require
+
 ```js
 // app.js
 const config = require('./config.js');
@@ -23,7 +23,7 @@ new Payment(config).webPay(type, client_ip, order_id, title, amount).then(url =>
 });
 ```
 
-config
+### config.js
 ```js
 'use strict';
 
