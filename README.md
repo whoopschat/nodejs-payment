@@ -17,12 +17,12 @@ let order_id = Date.now();
 let title = "payment test";
 let amount = 1;
 // wepay
-new Payment(config).webPay("wepay", client_ip, order_id, title, amount).them(url => {
+new Payment(config).webPay("wepay", client_ip, order_id, title, amount).then(url => {
     // payment url
 });
 
 // alipay
-new Payment(config).webPay("alipay", client_ip, order_id, title, amount).them(url => {
+new Payment(config).webPay("alipay", client_ip, order_id, title, amount).then(url => {
     // payment url
 });
 ```
