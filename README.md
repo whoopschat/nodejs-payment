@@ -19,7 +19,7 @@ let order_id = Date.now();
 let title = "payment test";
 let amount = 1;
 // create payment url
-new Payment(config, client_ip).webPay(type, order_id, title, amount).then(url => {
+new Payment(config).webPay(type, order_id, title, amount, client_ip).then(url => {
     // open this url go pay
 });
 ```
@@ -56,9 +56,9 @@ module.exports = {
 
 Api | Status
 -|-
-`webPay(out_trade_id, title, amount)` | ✔ |
+`webPay(out_trade_id, title, amount, client_ip)` | ✔ |
 `queryPay(trade_id)` | ✔  |
-`transfers(trans_trade_id, account, realname, title, amount)` | ✔ |
+`transfers(trans_trade_id, account, realname, title, amount, client_ip)` | ✔ |
 `queryTransfers(trans_trade_id)` | ✔ |
 
 ## Docs
