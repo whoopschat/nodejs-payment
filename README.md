@@ -54,8 +54,8 @@ module.exports = {
 
 ## Features
 
-api | status |
--|-|-
+Api | Status
+-|-
 `webPay(out_trade_id, title, amount)` | ✔ |
 `queryPay(trade_id)` | ✔  |
 `transfers(trans_trade_id, account, realname, title, amount)` | ✔ |
