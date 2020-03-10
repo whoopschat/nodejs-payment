@@ -1,8 +1,8 @@
 {
   "name": "nodejs-payment",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "nodejs payment lib",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,8 +22,7 @@
     "nodejs-payment"
   ],
   "files": [
-    "lib",
-    "index.js"
+    "lib"
   ],
   "dependencies": {
     "request": "^2.88.0",

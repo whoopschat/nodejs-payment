@@ -54,9 +54,15 @@ module.exports = {
 
 ## Features
 
-feature | wepay |  alipay  
+feature | wepay |  alipay
 -|-|-
-webPay | ✔  | ✔  |
-queryPay | ✔  | ✔  |
-transfers | ✔ | - |
-queryTransfers | ✔ | - |
+`webPay(client_ip, out_trade_id, title, amount)` | ✔  | ✔  |
+`queryPay(trade_id, trade_no)` | ✔  | ✔  |
+`transfers(client_ip, open_id, partner_trade_id, title, amount)` | ✔ | - |
+`queryTransfers(partner_trade_id)` | ✔ | - |
+
+## Docs
+
+[wepay docs](https://pay.weixin.qq.com/wiki/doc/api/index.html)
+
+[alipay docs](https://open.alipay.com/developmentDocument.htm)
